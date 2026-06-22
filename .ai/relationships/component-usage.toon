@@ -1,4 +1,24 @@
-generated: "2026-06-22T19:15:29.350806+00:00"
+generated: "2026-06-22T19:28:19.123400+00:00"
 components:
+  "libs/ui-react/src/components/atoms/Button/Button.test.tsx":
+    path: libs/ui-react/src/components/atoms/Button/Button.test.tsx
+    type: atom
+    framework: react
+    uses[0]:
+    usedBy[0]:
+    externalDependencies[7]: @testing-library/user-event,@testing-library/react,@testing-library/react,vitest,vitest,vitest,vitest
+    utilityDependencies[0]:
+    schemaDependencies[0]:
+  "libs/ui-react/src/components/atoms/Button/Button.tsx":
+    path: libs/ui-react/src/components/atoms/Button/Button.tsx
+    type: atom
+    framework: react
+    uses[0]:
+    usedBy[0]:
+    externalDependencies[2]: class-variance-authority,class-variance-authority
+    utilityDependencies[0]:
+    schemaDependencies[0]:
+    metadata: libs/ui-react/src/components/atoms/Button/Button.metadata.ts
 statistics:
-  totalComponents: 0
+  totalComponents: 2
+  atom: 2
