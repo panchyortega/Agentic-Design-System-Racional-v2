@@ -1,0 +1,13 @@
+{
+  "name": "@racional/tokens",
+  "version": "0.1.0",
+  "description": "Design tokens for Racional — W3C format, compiled via Style Dictionary",
+  "main": "dist/tokens.css",
+  "scripts": {
+    "build": "style-dictionary build --config sd.config.json",
+    "dev": "style-dictionary build --config sd.config.json --watch"
+  },
+  "devDependencies": {
+    "style-dictionary": "^4.0.0"
+  }
+}
