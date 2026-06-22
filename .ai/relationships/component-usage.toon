@@ -1,0 +1,12 @@
+summary:
+  totalComponents: 0
+  componentsWithMetadata: 0
+  relationshipsMapped: 0
+  lastGenerated: "pending — run codebase-index skill after first components are built"
+
+components: {}
+
+note: >
+  Este archivo se genera automáticamente con el skill codebase-index.
+  Correr después de agregar o eliminar componentes.
+  Instrucciones: npx giorris-claude-skills install codebase-index
