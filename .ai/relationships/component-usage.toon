@@ -1,12 +1,4 @@
-summary:
+generated: "2026-06-22T19:15:29.350806+00:00"
+components:
+statistics:
   totalComponents: 0
-  componentsWithMetadata: 0
-  relationshipsMapped: 0
-  lastGenerated: "pending — run codebase-index skill after first components are built"
-
-components: {}
-
-note: >
-  Este archivo se genera automáticamente con el skill codebase-index.
-  Correr después de agregar o eliminar componentes.
-  Instrucciones: npx giorris-claude-skills install codebase-index
