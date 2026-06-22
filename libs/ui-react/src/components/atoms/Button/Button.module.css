@@ -1,0 +1,139 @@
+/* =============================================================================
+   Button — CSS Modules
+   Todos los valores referencian tokens. Ningún valor hardcodeado.
+   ============================================================================= */
+
+/* ─── Base ─────────────────────────────────────────────────────────────────── */
+
+.base {
+  /* Layout */
+  display:         inline-flex;
+  align-items:     center;
+  justify-content: center;
+  gap:             var(--space-008);
+
+  /* Shape */
+  border:        1px solid transparent;
+  border-radius: var(--border-radius-full);
+  cursor:        pointer;
+
+  /* Typography */
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-medium);
+  white-space: nowrap;
+
+  /* Transition */
+  transition: background-color 120ms ease, border-color 120ms ease, color 120ms ease;
+
+  /* Reset */
+  text-decoration: none;
+  outline:         none;
+  user-select:     none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.base:focus-visible {
+  outline:        2px solid var(--border-focus);
+  outline-offset: 2px;
+}
+
+/* ─── Variantes ─────────────────────────────────────────────────────────────── */
+
+.primary {
+  background-color: var(--btn-primary-bg);
+  color:            var(--btn-primary-text);
+  border-color:     transparent;
+}
+.primary:hover:not(:disabled)  { background-color: var(--btn-primary-bg-hover); }
+.primary:active:not(:disabled) { background-color: var(--btn-primary-bg-pressed); }
+
+.secondary {
+  background-color: var(--btn-secondary-bg);
+  color:            var(--btn-secondary-text);
+  border-color:     transparent;
+}
+.secondary:hover:not(:disabled)  { background-color: var(--btn-secondary-bg-hover); }
+.secondary:active:not(:disabled) { background-color: var(--btn-secondary-bg-pressed); }
+
+.tertiary {
+  background-color: var(--btn-terciary-bg);
+  color:            var(--btn-terciary-text);
+  border-color:     transparent;
+}
+.tertiary:hover:not(:disabled)  { background-color: var(--btn-terciary-bg-hover); }
+.tertiary:active:not(:disabled) { background-color: var(--btn-terciary-bg-pressed); }
+
+.outlined {
+  background-color: var(--btn-outlined-bg);
+  color:            var(--btn-outlined-text);
+  border-color:     var(--btn-outlined-border);
+}
+.outlined:hover:not(:disabled)  { background-color: var(--btn-outlined-bg-hover); }
+.outlined:active:not(:disabled) { background-color: var(--btn-outlined-bg-pressed); }
+
+/* ─── Disabled (compartido) ─────────────────────────────────────────────────── */
+
+.base:disabled {
+  cursor:           not-allowed;
+  color:            var(--btn-disabled-text);
+  background-color: transparent;
+  border-color:     var(--btn-disabled-border);
+  opacity:          1;
+}
+
+/* ─── Tamaños ───────────────────────────────────────────────────────────────── */
+
+.xsmall {
+  padding:   var(--space-004) var(--space-012);
+  font-size: var(--font-size-0);   /* 12px */
+  gap:       var(--space-004);
+}
+
+.small {
+  padding:   var(--space-008) var(--space-016);
+  font-size: var(--font-size-1);   /* 14px */
+  gap:       var(--space-004);
+}
+
+.medium {
+  padding:   var(--space-012) var(--space-024);
+  font-size: var(--font-size-2);   /* 16px */
+}
+
+.large {
+  padding:   var(--space-016) var(--space-032);
+  font-size: var(--font-size-3);   /* 18px */
+  gap:       var(--space-012);
+}
+
+/* ─── Contenido interno ─────────────────────────────────────────────────────── */
+
+.label {
+  line-height: 1;
+}
+
+.iconLeft,
+.iconRight {
+  display:     inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* ─── Spinner (loading) ─────────────────────────────────────────────────────── */
+
+.spinner {
+  display:     inline-flex;
+  align-items: center;
+}
+
+.spinner svg {
+  width:            1.125em;
+  height:           1.125em;
+  animation:        spin 700ms linear infinite;
+  color:            currentColor;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
